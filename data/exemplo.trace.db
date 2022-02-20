@@ -405,3 +405,12 @@ INSERT INTO CATEGORIA(NOME)VALUES(1,"informatica") [21002-200]
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-20 15:28:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORIA PRODUTO PRODUTO_CATEGORIA[*]"; SQL statement:
+SELECT * FROM CATEGORIA PRODUTO PRODUTO_CATEGORIA [42000-200]
+2022-02-20 15:28:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORIA PRODUTO PRODUTO_CATEGORIA[*]"; SQL statement:
+SELECT * FROM CATEGORIA PRODUTO PRODUTO_CATEGORIA [42000-200]
+2022-02-20 15:28:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORIA PRODUTO PRODUTO_CATEGORIA[*] PRODUTO_CATEGORIAS"; SQL statement:
+SELECT * FROM CATEGORIA PRODUTO PRODUTO_CATEGORIA PRODUTO_CATEGORIAS [42000-200]
