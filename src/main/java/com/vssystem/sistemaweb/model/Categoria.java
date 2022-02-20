@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 @Entity
@@ -18,6 +19,7 @@ private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String nome;
 
+	@JsonManagedReference
 	@ManyToMany(mappedBy = "categorias")
 	private List<Produto> produtos = new ArrayList<Produto>();
 
